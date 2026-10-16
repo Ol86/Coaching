@@ -11,3 +11,6 @@ wheels/
 
 # Garmin Connect token store
 garmin_tokens.json
+
+# Garmin Connect data
+garmin_output/Summary_KW*.json
