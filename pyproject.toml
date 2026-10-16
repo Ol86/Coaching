@@ -1,0 +1,22 @@
+[project]
+name = "coaching"
+version = "0.1.0"
+description = "A simple project, for loading Garmin Connect data and generating a training plan."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "garminconnect>=0.3.19",
+    "garth>=0.8.0",
+]
+
+[project.scripts]
+coaching = "coaching:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "loguru>=0.7.3",
+]
